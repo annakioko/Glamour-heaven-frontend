@@ -7,17 +7,16 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Authentication/Login";
 import Signup from "./pages/Authentication/Signup";
+import Sidebar from "./components/AdminSidebar";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/" element={<Sidebar />} />
       </Routes>
     </Router>
-  )
+  );
 }
 
 export default App
