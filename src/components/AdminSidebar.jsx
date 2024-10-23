@@ -90,7 +90,7 @@ const Sidebar = () => {
               </li>
               <li>
                 <Link
-                  to="/rolespermissions"
+                  to="/rolesandpermissions"
                   className="flex gap-[10px] hover:text-textsecondary"
                 >
                   <FaLock className="w-7 h-7" />
@@ -146,7 +146,7 @@ const Sidebar = () => {
           )}
         </div>
         <button
-          className="bg-secondary text-primary-light hover:text-textsecondary px-[10px] py-[5px] rounded-[5px] text-[15px]"
+          className="bg-secondary border border-solid border-textprimary text-primary-light hover:text-textsecondary px-[10px] py-[5px] rounded-[5px] text-[15px]"
           onClick={handleLogout}
         >
           Logout
