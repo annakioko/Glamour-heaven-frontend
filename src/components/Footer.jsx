@@ -1,38 +1,42 @@
 import React from "react";
+import logo from "/src/assets/logo.png"; // Import the logo
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-darkbrown text-white py-6">
       <div className="container mx-auto flex flex-wrap justify-between items-start">
         {/* Left Section: Logo and "Glamorous Heaven" */}
         <div className="flex flex-col items-start">
           <div className="text-2xl font-bold">
-            {/* Logo Placeholder */}
-            <a href="/" className="text-white">
-              BeautyShop Logo
+            {/* Logo Image */}
+            <a href="/">
+              <img src={logo} alt="BeautyShop Logo" className="h-24" />{" "}
+              {/* Adjust height as needed */}
             </a>
           </div>
-          <p className="mt-2 text-gray-400">Glamorous Heaven</p>
+          <p className="mt-2 text-white">Glamorous Heaven</p>
         </div>
 
         {/* Right Section: Three Columns */}
-        <div className="flex flex-wrap space-x-10">
+        <div className="flex flex-wrap space-x-10 text-white">
           {/* Column 1: About Us */}
           <div className="flex flex-col">
-            <h3 className="font-bold text-lg mb-2">About Us</h3>
-            <ul>
+            <h3 className="text-2xl font-serif mb-2">ABOUT US</h3>
+            <ul className="my-3 space-y-2">
+              {" "}
+              {/* Added space-y-2 for vertical spacing */}
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="font-sans hover:text-white">
                   Our Story
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="font-sans hover:text-white">
                   Mission
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="font-sans hover:text-white">
                   Vision
                 </a>
               </li>
@@ -41,21 +45,23 @@ const Footer = () => {
 
           {/* Column 2: Shop */}
           <div className="flex flex-col">
-            <h3 className="font-bold text-lg mb-2">Shop</h3>
-            <ul>
+            <h3 className="text-2xl mb-2 font-serif">SHOP</h3>
+            <ul className="space-y-2">
+              {" "}
+              {/* Added space-y-2 for vertical spacing */}
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  All Products
+                <a href="#" className="font-sans hover:text-white">
+                  Scents
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Beauty Essentials
+                <a href="#" className="font-sans hover:text-white">
+                  Makeup
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  Gift Cards
+                <a href="#" className="font-sans hover:text-white">
+                  Beard Gang
                 </a>
               </li>
             </ul>
@@ -63,16 +69,18 @@ const Footer = () => {
 
           {/* Column 3: Address */}
           <div className="flex flex-col">
-            <h3 className="font-bold text-lg mb-2">Address</h3>
-            <ul>
+            <h3 className="text-2xl font-serif mb-2">ADDRESS</h3>
+            <ul className="space-y-2">
+              {" "}
+              {/* Added space-y-2 for vertical spacing */}
               <li>
-                <span className="text-gray-400">123 Beauty Lane</span>
+                <span className="font-sans">Ngong Lane Plaza</span>
               </li>
               <li>
-                <span className="text-gray-400">City, State 45678</span>
+                <span className="font-sans">0724567355</span>
               </li>
               <li>
-                <span className="text-gray-400">info@beautyshop.com</span>
+                <span className="font-sans">glamorousheave@gmail.com</span>
               </li>
             </ul>
           </div>

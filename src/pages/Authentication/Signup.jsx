@@ -13,8 +13,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-primary text-textprimary">
-      <div className="w-full max-w-md p-8 space-y-6 bg-primary rounded-lg ">
+    <div className="flex items-center justify-center min-h-screen bg-brown text-textprimary">
+      <div className="w-full max-w-md p-8 space-y-6 bg-brown rounded-lg ">
         {/* Logo */}
         <div className="flex justify-center">
           <img src={logo} alt="Logo" className="w-20 h-20" />
@@ -36,7 +36,7 @@ const Signup = () => {
               type="text"
               id="name"
               placeholder="Name"
-              className="w-full px-4 py-2 mb-4 text-gray-700 bg-primary border border-solid border-secondary  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mb-4 text-gray-700 bg-brown border border-solid border-darkbrown  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -47,7 +47,7 @@ const Signup = () => {
               type="email"
               id="email"
               placeholder="Email"
-              className="w-full px-4 py-2 mb-4 text-gray-700 bg-primary border border-solid border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mb-4 text-gray-700 bg-brown border border-solid border-darkbrown rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -58,14 +58,14 @@ const Signup = () => {
               type="password"
               id="password"
               placeholder="Password"
-              className="w-full px-4 py-2 mb-4 text-gray-700 bg-primary border border-solid border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mb-4 text-gray-700 bg-brown border border-solid border-darkbrown rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           {/* Signup Button */}
           <button
             type="submit"
-            className="w-full px-4 py-2 text-textsecondary bg-secondary rounded-lg hover:bg-button focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="w-full px-4 py-2 text-textsecondary bg-brown rounded-lg hover:bg-button focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Sign Up
           </button>
